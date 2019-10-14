@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Search Engine</title>
+	<h1>Searcher</h1>
+</head>
+<body>
+	<form>
+
+		<input type="text" name="text" id="value">
+		<input type="Submit" name="Submit" id="Submit" value="Search" onclick="search()">
+		<img src="mygif.gif" style="height:70px; width:70px;">
+	</form>
+
+
+<script type="text/javascript">
+	function search() {
+
+		text=document.getElementById('value').value;
+		var url = "https://"+text+".com";
+		window.open(url);
+	}
+</script>
+
+
+</body>
+</html>
